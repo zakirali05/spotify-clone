@@ -34,7 +34,7 @@ const PlayLists = () => {
                 <h1 className="text-lg font-semibold text-white  mb-3 flex gap-2 items-center "> <BiSolidMusic />  Playlists</h1>
                 {playlists.map(({ name, id }) => {
                     return (
-                        <div className="hover:text-white hover:underline cursor-pointer" key={id} onClick={() => changeCurrentPlaylist(id)}>
+                        <div className="hover:text-white hover:underline cursor-pointer" key={id} onClick={() => { changeCurrentPlaylist(id); dispatch({ type: reducerCases.SET_NAV, nav: false }) }}>
                             {name}
                         </div>
                     );

@@ -5,6 +5,7 @@ import { useEffect } from "react"
 import { useStateProvider } from "../utils/StateProvider";
 import axios from "axios"
 import { reducerCases } from "../utils/Constants";
+import Footer from "./Footer";
 const Spotify = () => {
   const [{ token }, dispatch] = useStateProvider();
   useEffect(() => {
@@ -33,6 +34,7 @@ const Spotify = () => {
         <Navbar />
         <Body />
       </div>
+      <Footer />
     </div>
   );
 };
