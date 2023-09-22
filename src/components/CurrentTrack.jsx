@@ -34,7 +34,7 @@ const CurrentTrack = () => {
     return (
         <div>
             {currentPlaying && (
-                <div className="track flex items-center gap-[1rem]">
+                <div className="track hidden md:flex items-center gap-[1rem]">
                     <div className="track__image">
                         <img src={currentPlaying.image} alt="currentPlaying" />
                     </div>

@@ -94,11 +94,11 @@ const Body = () => {
 
   const changeNavToBlur = () => {
 
-    if (window.scrollY >= 200) {
+    if (window.scrollY >= 260) {
 
       dispatch({ type: reducerCases.SET_HEADER, headerBlack: true })
     }
-    else if (window.scrollY >= 80) {
+    else if (window.scrollY >= 30) {
       dispatch({ type: reducerCases.NAV_SCROLL, navScrolled: true })
     }
     else {

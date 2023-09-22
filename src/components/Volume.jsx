@@ -20,7 +20,7 @@ const Volume = () => {
         );
     };
     return (
-        <div className='flex items-center justify-end'>
+        <div className='md:flex items-center justify-end hidden'>
             <input className='w-[15rem] h-[0.5rem] border-[2rem]' type="range" onMouseUp={(e) => setVolume(e)} min={0} max={100} />
         </div>
     )
