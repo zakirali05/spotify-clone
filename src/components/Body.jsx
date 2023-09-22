@@ -123,7 +123,7 @@ const Body = () => {
             </div>
           </div>
           <div className="list  ">
-            <div className={`header-row  font-bold ${headerBlack ? "bg-slate-900 p-3 rounded-lg" : ""}`}>
+            <div className={`header-row  font-bold ${headerBlack ? "bg-[#121212] p-3 rounded-lg" : ""}`}>
               <div className="col">
                 <span>#</span>
               </div>
