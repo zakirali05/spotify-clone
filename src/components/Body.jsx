@@ -21,6 +21,7 @@ const Body = () => {
           },
         }
       );
+
       const selectedPlaylist = {
         id: response.data.id,
         name: response.data.name,
@@ -53,7 +54,8 @@ const Body = () => {
     artists,
     image,
     context_uri,
-    track_number
+    track_number,
+
   ) => {
 
     const response = await axios.put(
@@ -67,8 +69,9 @@ const Body = () => {
       },
       {
         headers: {
-          "Content-Type": "application/json",
           Authorization: "Bearer " + token,
+          "Content-Type": "application/json",
+
         },
       }
     );
@@ -80,6 +83,7 @@ const Body = () => {
         image,
       };
       dispatch({ type: reducerCases.SET_PLAYING, currentPlaying });
+
       dispatch({ type: reducerCases.SET_PLAYER_STATE, playerState: true });
     } else {
       dispatch({ type: reducerCases.SET_PLAYER_STATE, playerState: true });
@@ -165,7 +169,8 @@ const Body = () => {
                           artists,
                           image,
                           context_uri,
-                          track_number
+                          track_number,
+
                         )
                       }
                     >

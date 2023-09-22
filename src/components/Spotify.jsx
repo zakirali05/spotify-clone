@@ -24,6 +24,7 @@ const Spotify = () => {
       dispatch({ type: reducerCases.SET_USER, userInfo });
     };
     getUserInfo();
+
   }, [dispatch, token]);
 
 
