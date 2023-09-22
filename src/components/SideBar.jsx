@@ -1,5 +1,6 @@
 import { AiFillHome } from "react-icons/ai"
 import { BiSearch } from "react-icons/bi"
+import PlayLists from "./PlayLists";
 const SideBar = () => {
 
 
@@ -17,7 +18,9 @@ const SideBar = () => {
                     <div className="flex w-full items-center justify-start cursor-pointer px-3 py-1 rounded-lg gap-5 hover:bg-black text-[#b3b3b3]"><AiFillHome />Home</div>
                     <div className="flex w-full items-center justify-start cursor-pointer px-3 py-1 rounded-lg  gap-5 hover:bg-black text-[#b3b3b3]"><BiSearch />Search</div>
                 </div>
+                <PlayLists />
             </div>
+
         </div>
     );
 };

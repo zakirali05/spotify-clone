@@ -6,13 +6,13 @@ import MobileSideBar from "./MobileSideBar";
 import { reducerCases } from "../utils/Constants";
 const Navbar = () => {
 
-    const [{ userInfo }, dispatch] = useStateProvider();
+    const [{ userInfo, navScrolled }, dispatch] = useStateProvider();
     const open = () => {
         dispatch({ type: reducerCases.SET_NAV, nav: true })
     }
 
     return (
-        <div className="sticky top-0 p-3 pt-5 ">
+        <div className={`sticky top-0 p-3 pt-5 ${navScrolled ? "blurNav " : ""}`}>
             <div className="flex items-center justify-between ">
                 <button onClick={open} className="sm:hidden p-2 text-white text-xl"><GiHamburgerMenu /></button>
                 <form className=" hidden sm:flex items-center justify-center gap-2  bg-white rounded-lg px-2">
