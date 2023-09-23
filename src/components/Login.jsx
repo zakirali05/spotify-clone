@@ -3,7 +3,7 @@ import { AiOutlineUser } from "react-icons/ai";
 const Login = () => {
   const handleClick = async () => {
     const client_id = "9d7831b783f2426c9d02406da2635e38";
-    const redirect_uri = "http://localhost:3000";
+    const redirect_uri = "https://spotify-clone-dusky-theta.vercel.app/";
     const api_uri = "https://accounts.spotify.com/authorize";
     const scope = [
       "user-read-private",
